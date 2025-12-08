@@ -31,7 +31,7 @@ export const signUp = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             maxAge: 10 * 24 * 60 * 1000,
-            sameSite: "none",
+            sameSite: "None",
             secure: true
         })
 
@@ -59,7 +59,7 @@ export const signIn = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             maxAge: 10 * 24 * 60 * 1000,
-            sameSite: "none",
+            sameSite: "None",
             secure: true
         })
 
@@ -140,6 +140,7 @@ export const resetPassword = async (req, res) => {
 
 
 }
+
 
 
 
