@@ -12,7 +12,7 @@ import { app, server } from "./socket/socket.js";
 const Port = process.env.PORT || 1000
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://one-chat-2.onrender.com",
     credentials:true
 }))
 app.use(express.json())
@@ -25,4 +25,5 @@ app.use("/api/message", messageRouter)
 server.listen(Port, () => {
     connectDb()
     console.log("hello main hu", Port)
+
 }) 
