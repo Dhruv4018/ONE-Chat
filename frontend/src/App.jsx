@@ -11,7 +11,7 @@ import { io } from "socket.io-client"
 import { setOnlineUsers, setSocket } from './redux/userSlice'
 import Forgot from './pages/Forgot'
 
-export const serverUrl = "http://localhost:2000"
+export const serverUrl = "https://one-chat-1-8pb7.onrender.com"
 
 const App = () => {
   useGetCurrent()
