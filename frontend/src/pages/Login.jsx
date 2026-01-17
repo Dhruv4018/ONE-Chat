@@ -53,9 +53,9 @@ const Login = () => {
                         />
                         <span className='absolute top-[10px] right-[20px] text-[#20c7ff] font-semibold  cursor-pointer' onClick={() => setShow(prev => !prev)}>{`${show ? "hidden" : "show"}`}</span>
                     </div>
-                    <div className='w-[95%] text-right  mb-4 cursor-pointer font-medium text-blue-500' onClick={() => navigate("/forgot")}>
+                    {/* <div className='w-[95%] text-right  mb-4 cursor-pointer font-medium text-blue-500' onClick={() => navigate("/forgot")}>
                         Forgot Password
-                    </div>
+                    </div> */}
 
                     {err && <p className='text-red-600'>*{err}</p>}
                     <button className='px-[20px] py-[10px] cursor-pointer shadow-gray-400 shadow-lg bg-[#20c7ff] text-white font-semibold rounded-2xl text-[20px] w-[200px]'
@@ -73,5 +73,6 @@ const Login = () => {
         </div>
     )
 }
+
 
 export default Login
